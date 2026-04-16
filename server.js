@@ -7,7 +7,7 @@ app.get("/sensor", (req, res) => {
     const {temp, hum} = req.query;
 
 
-})
+
 if("temp || !hum"){
     return res.status(400).send("Dados invalidos");
 }
@@ -22,3 +22,4 @@ dados.push(leitura);
 console.log(leitra);
 
 res.send("Ok");
+});
